@@ -31,7 +31,7 @@ jobs:
 
   reusable-workflow:
     needs: credentials
-    uses: .github/workflows/reusable-workflow.yml@main
+    uses: "./.github/workflows/reusable-workflow.yml"
     secrets:
       env_vars: |
         CREDENTIAL1=${{ needs.credentials.outputs.CREDENTIAL1 }}
