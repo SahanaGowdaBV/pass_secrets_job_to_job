@@ -6,8 +6,8 @@ on:
 jobs:
   parse-credentials:
     runs-on: ubuntu-latest
-    env:
-      env_vars: ${{ secrets.env_vars }}
+    # env:
+    #   env_vars: ${{ secrets.env_vars }}
     steps:
       - name: Decode credentials as environment variables
         run: |
